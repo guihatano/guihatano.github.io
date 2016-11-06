@@ -68,12 +68,12 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="http://guihatano.github.io/#">Home</a></li>
-        <li class="dropdown">
+      	<li><a href="index.html">Home</a></li>
+        <li class="active dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jogo da Velha <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="tictactoe.html">1 Player</a></li>
-            <li><a href="#">2 Players</a></li>
+            <li><a href="index.html">2 Players</a></li>
           </ul>
         </li>
         <li><a href="about.html">About</a></li>
@@ -95,22 +95,22 @@
 </div>
 
 <div id="conteudo">
-	<h1 class="tituloJogo">Jogo da Velha v0.10</h1>
+	<h1 class="tituloJogo">Jogo da Velha 1 Player</h1>
 	<center><table id="tab">
 	<tbody><tr>	
-		<td id="11" class="square" onclick="JogoDaVelha('1','1')"></td>
-		<td id="12" class="square v" onclick="JogoDaVelha('1','2')"></td>
-		<td id="13" class="square" onclick="JogoDaVelha('1','3')"></td>
+		<td id="11" class="square" onclick="JogoDaVelhaCPU('1','1')"></td>
+		<td id="12" class="square v" onclick="JogoDaVelhaCPU('1','2')"></td>
+		<td id="13" class="square" onclick="JogoDaVelhaCPU('1','3')"></td>
 	</tr>
 	<tr>	
-		<td id="21" class="square h" onclick="JogoDaVelha('2','1')"></td>
-		<td id="22" class="square h v" onclick="JogoDaVelha('2','2')"></td>
-		<td id="23" class="square h" onclick="JogoDaVelha('2','3')"></td>
+		<td id="21" class="square h" onclick="JogoDaVelhaCPU('2','1')"></td>
+		<td id="22" class="square h v" onclick="JogoDaVelhaCPU('2','2')"></td>
+		<td id="23" class="square h" onclick="JogoDaVelhaCPU('2','3')"></td>
 	</tr>
 	<tr>	
-		<td id="31" class="square" onclick="JogoDaVelha('3','1')"></td>
-		<td id="32" class="square v" onclick="JogoDaVelha('3','2')"></td>
-		<td id="33" class="square" onclick="JogoDaVelha('3','3')"></td>
+		<td id="31" class="square" onclick="JogoDaVelhaCPU('3','1')"></td>
+		<td id="32" class="square v" onclick="JogoDaVelhaCPU('3','2')"></td>
+		<td id="33" class="square" onclick="JogoDaVelhaCPU('3','3')"></td>
 	</tr>
 	</tbody></table></center>
 	<div id="mensagem"></div>
