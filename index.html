@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>guihatano</title>
+	<meta charset="UTF-8">
+	<link rel="icon" href="gyh.ico" type="image/x-icon">
+	<script src="theScripts.js"></script><style type="text/css"></style>
+	<!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div><h2 id="data">
+	<script type="text/javascript">
+		var now = new Date();
+		var mName = now.getMonth() +1 ;
+		var dName = now.getDay() +1;
+		var dayNr = now.getDate();
+		var yearNr=now.getYear();
+		if(dName==1) {Day = "Domingo";}
+		if(dName==2) {Day = "Segunda-feira";}
+		if(dName==3) {Day = "Ter&ccedil;a-feira";}
+		if(dName==4) {Day = "Quarta-feira";}
+		if(dName==5) {Day = "Quinta-feira";}
+		if(dName==6) {Day = "Sexta-feira";}
+		if(dName==7) {Day = "S&aacute;bado";}
+		if(mName==1){Month = "Janeiro";}
+		if(mName==2){Month = "Fevereiro";}
+		if(mName==3){Month = "Mar&ccedil;o";}
+		if(mName==4){Month = "Abril";}
+		if(mName==5){Month = "Maio";}
+		if(mName==6){Month = "Junho";}
+		if(mName==7){Month = "Julho";}
+		if(mName==8){Month = "Agosto";}
+		if(mName==9){Month = "Setembro";}
+		if(mName==10){Month = "Outubro";}
+		if(mName==11){Month = "Novembro";}
+		if(mName==12){Month = "Dezembro";}
+		if(yearNr < 2000) {Year = 1900 + yearNr;}
+		else {Year = yearNr;}
+		var todaysDate =(" " + Day + ", " + dayNr + " de " + Month + " de " + Year);
+
+		document.write('  ' + todaysDate);
+	</script>
+	</h2>
+	<h1 id="hora"><span id="Clock">00:00:00</span></h1>
+</div>
+
+<div id="menu">
+	<nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://www.guihatano.github.io/#">guihatano</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://www.guihatano.github.io/#">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jogo da Velha <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="jogovelha.html">1 Player</a></li>
+            <li><a href="#">2 Players</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://guihatano.blogspot.com.br/">blog</a></li>
+        <li class="disabled" class="dropdown">
+          <a href="http://www.guihatano.github.io/#" class="dropdown-toggle" data-toggle="dropdown">Site style <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li class="disabled"><a href="http://www.guihatano.github.io/#">Version 1</a></li>
+            <li><a href="#">Version 2</a></li>
+            <li><a href="#">Version 3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+
+<div id="conteudo">
+	<h1 class="tituloJogo">Jogo da Velha v0.10</h1>
+	<center><table id="tab">
+	<tbody><tr>	
+		<td id="11" class="square" onclick="JogoDaVelha('1','1')"></td>
+		<td id="12" class="square v" onclick="JogoDaVelha('1','2')"></td>
+		<td id="13" class="square" onclick="JogoDaVelha('1','3')"></td>
+	</tr>
+	<tr>	
+		<td id="21" class="square h" onclick="JogoDaVelha('2','1')"></td>
+		<td id="22" class="square h v" onclick="JogoDaVelha('2','2')"></td>
+		<td id="23" class="square h" onclick="JogoDaVelha('2','3')"></td>
+	</tr>
+	<tr>	
+		<td id="31" class="square" onclick="JogoDaVelha('3','1')"></td>
+		<td id="32" class="square v" onclick="JogoDaVelha('3','2')"></td>
+		<td id="33" class="square" onclick="JogoDaVelha('3','3')"></td>
+	</tr>
+	</tbody></table></center>
+	<div id="mensagem"></div>
+	<button type="button" onclick="Reset()">Reset</button>
+</div>
+
+
+
+
+
+
+</body>
+</html>
