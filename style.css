@@ -38,13 +38,17 @@ h1, h2 {
 .tituloJogo {
 	margin-bottom: 20px;
 }
-#conteudo {
+
+#content {
 	text-align:center;
 }
 
-#conteudo>a>img:hover {
-	width:60px;
-	height:60px;
+#content>a, #content>p>a {
+	color: #AEAEAE;
+}
+
+#content>a:hover, #content>p>a:hover {
+	color: #E6E6E6;
 }
 
 #tab {
@@ -75,7 +79,7 @@ h1, h2 {
     border-bottom: 5px solid #E6E6E6;
 }
 
-#mensagem {
+#message {
 	color:#E6E6E6;
 	padding-top: 15px;
 }

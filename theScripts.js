@@ -48,57 +48,57 @@ function JogoDaVelha(lin, col) {
     var tresTres = document.getElementById(33).innerHTML;
     if (jogadas > 4) {
       if (umUm == "X" && umDois == "X" && umTres == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (doisUm == "X" && doisDois == "X" && doisTres == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (tresUm == "X" && tresDois == "X" && tresTres == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (umUm == "X" && doisUm == "X" && tresUm == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (umDois == "X" && doisDois == "X" && tresDois == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (umTres == "X" && doisTres == "X" && tresTres == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (umUm == "X" && doisDois == "X" && tresTres == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (umTres == "X" && doisDois == "X" && tresUm == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       } else
       <!-- Jogador O -->
       if (umUm == "O" && umDois == "O" && umTres == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (doisUm == "O" && doisDois == "O" && doisTres == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (tresUm == "O" && tresDois == "O" && tresTres == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (umUm == "O" && doisUm == "O" && tresUm == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (umDois == "O" && doisDois == "O" && tresDois == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (umTres == "O" && doisTres == "O" && tresTres == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (umUm == "O" && doisDois == "O" && tresTres == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (umTres == "O" && doisDois == "O" && tresUm == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (jogadas == 9) {
         //alert("Empate!\nDeu velha!");
-        document.getElementById("mensagem").innerHTML = "Empate! Deu Velha!<br>";
+        document.getElementById("message").innerHTML = "Empate! Deu Velha!<br>";
       }
     }
   }
@@ -114,7 +114,7 @@ function Reset() {
   document.getElementById(31).innerHTML = "";
   document.getElementById(32).innerHTML = "";
   document.getElementById(33).innerHTML = "";
-  document.getElementById("mensagem").innerHTML = "";
+  document.getElementById("message").innerHTML = "";
   jogadas = 0;
   cells = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 }
@@ -207,56 +207,56 @@ function JogoDaVelhaCPU(lin, col) {
     var tresTres = document.getElementById(33).innerHTML;
     if (jogadas > 4) {
       if (umUm == "X" && umDois == "X" && umTres == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (doisUm == "X" && doisDois == "X" && doisTres == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (tresUm == "X" && tresDois == "X" && tresTres == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (umUm == "X" && doisUm == "X" && tresUm == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (umDois == "X" && doisDois == "X" && tresDois == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (umTres == "X" && doisTres == "X" && tresTres == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (umUm == "X" && doisDois == "X" && tresTres == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (umTres == "X" && doisDois == "X" && tresUm == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       } else
       <!-- Jogador O -->
       if (umUm == "O" && umDois == "O" && umTres == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (doisUm == "O" && doisDois == "O" && doisTres == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (tresUm == "O" && tresDois == "O" && tresTres == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (umUm == "O" && doisUm == "O" && tresUm == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (umDois == "O" && doisDois == "O" && tresDois == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (umTres == "O" && doisTres == "O" && tresTres == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (umUm == "O" && doisDois == "O" && tresTres == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (umTres == "O" && doisDois == "O" && tresUm == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (jogadas == 9) {
-        document.getElementById("mensagem").innerHTML = "Empate! Deu Velha!<br>";
+        document.getElementById("message").innerHTML = "Empate! Deu Velha!<br>";
       }
     }
   }
@@ -472,56 +472,56 @@ function JogoDaVelhaHC(lin, col) {
     var tresTres = document.getElementById(33).innerHTML;
     if (jogadas > 4) {
       if (umUm == "X" && umDois == "X" && umTres == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (doisUm == "X" && doisDois == "X" && doisTres == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (tresUm == "X" && tresDois == "X" && tresTres == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (umUm == "X" && doisUm == "X" && tresUm == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (umDois == "X" && doisDois == "X" && tresDois == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (umTres == "X" && doisTres == "X" && tresTres == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (umUm == "X" && doisDois == "X" && tresTres == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       }
       else if (umTres == "X" && doisDois == "X" && tresUm == "X") {
-        document.getElementById("mensagem").innerHTML = "Jogador X ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador X ganhou o jogo!";
       } else
       <!-- Jogador O -->
       if (umUm == "O" && umDois == "O" && umTres == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (doisUm == "O" && doisDois == "O" && doisTres == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (tresUm == "O" && tresDois == "O" && tresTres == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (umUm == "O" && doisUm == "O" && tresUm == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (umDois == "O" && doisDois == "O" && tresDois == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (umTres == "O" && doisTres == "O" && tresTres == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (umUm == "O" && doisDois == "O" && tresTres == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (umTres == "O" && doisDois == "O" && tresUm == "O") {
-        document.getElementById("mensagem").innerHTML = "Jogador O ganhou o jogo!";
+        document.getElementById("message").innerHTML = "Jogador O ganhou o jogo!";
       }
       else if (jogadas == 9) {
-        document.getElementById("mensagem").innerHTML = "Empate! Deu Velha!<br>";
+        document.getElementById("message").innerHTML = "Empate! Deu Velha!<br>";
       }
     }
   }
