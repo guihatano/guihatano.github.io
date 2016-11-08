@@ -1,22 +1,4 @@
-// Last updated: 2015-07-06
-
-function Horario() {
-    	var Hoje = new Date(); 
-    	var Horas = Hoje.getHours(); 
-    	if(Horas < 10){ 
-      		Horas = "0"+Horas; 
-    	} 
-    	var Minutos = Hoje.getMinutes(); 
-    	if(Minutos < 10){ 
-      		Minutos = "0"+Minutos; 
-    	} 
-    	var Segundos = Hoje.getSeconds(); 
-    	if(Segundos < 10){ 
-      		Segundos = "0"+Segundos; 
-    	} 
-		document.getElementById("Clock").innerHTML = Horas + ":" + Minutos + ":" +Segundos; 
-} 
-window.setInterval("Horario()",1000);
+// Last updated: 2016-11-08
 
 function isEmpty(lc) {
   if (document.getElementById(lc).innerHTML == "") {
