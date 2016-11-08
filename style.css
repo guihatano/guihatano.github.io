@@ -8,17 +8,6 @@ h1, h2 {
 	text-align:center;
 }
 
-#data {
-	margin-bottom:0px;
-	font-size:25px;
-}
-
-#hora {
-	margin-top:0px;
-	letter-spacing:4px;
-	font-size:85px;
-}
-
 .dropdown-menu {
 	background-color:#222;
 }
