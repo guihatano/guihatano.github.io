@@ -39,6 +39,10 @@ h1, h2 {
 	color: #E6E6E6;
 }
 
+#content>p {
+	margin-top:10px;
+}
+
 #tab {
 	font-size:50px;
 	color:#E6E6E6;
