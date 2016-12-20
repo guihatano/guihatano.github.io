@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>guihatano</title>
-	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link rel="shortcut icon" href="gyh.ico" type="image/x-icon">
 	<link rel="icon" href="gyh.ico" type="image/x-icon">
-	<script src="theScripts.js"></script><style type="text/css"></style>
+	<script src="js/theScripts.js"></script>
 	<!-- Bootstrap -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-	<script src="./js/jquery.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -65,23 +64,27 @@
 
 <div id="content">
 	<h1 class="tituloJogo">Jogo da Velha (Tic Tac Toe)</h1>
-	<center><table id="tab">
-	<tbody><tr>	
-		<td id="11" class="square" onclick="JogoDaVelha('1','1')"></td>
-		<td id="12" class="square v" onclick="JogoDaVelha('1','2')"></td>
-		<td id="13" class="square" onclick="JogoDaVelha('1','3')"></td>
-	</tr>
-	<tr>	
-		<td id="21" class="square h" onclick="JogoDaVelha('2','1')"></td>
-		<td id="22" class="square h v" onclick="JogoDaVelha('2','2')"></td>
-		<td id="23" class="square h" onclick="JogoDaVelha('2','3')"></td>
-	</tr>
-	<tr>	
-		<td id="31" class="square" onclick="JogoDaVelha('3','1')"></td>
-		<td id="32" class="square v" onclick="JogoDaVelha('3','2')"></td>
-		<td id="33" class="square" onclick="JogoDaVelha('3','3')"></td>
-	</tr>
-	</tbody></table></center>
+	<center>
+    <table id="tab">
+	    <tbody>
+        <tr>
+      		<td id="11" class="square" onclick="JogoDaVelha('1','1')"></td>
+      		<td id="12" class="square v" onclick="JogoDaVelha('1','2')"></td>
+      		<td id="13" class="square" onclick="JogoDaVelha('1','3')"></td>
+	      </tr>
+	      <tr>
+      		<td id="21" class="square h" onclick="JogoDaVelha('2','1')"></td>
+      		<td id="22" class="square h v" onclick="JogoDaVelha('2','2')"></td>
+      		<td id="23" class="square h" onclick="JogoDaVelha('2','3')"></td>
+      	</tr>
+      	<tr>
+      		<td id="31" class="square" onclick="JogoDaVelha('3','1')"></td>
+      		<td id="32" class="square v" onclick="JogoDaVelha('3','2')"></td>
+      		<td id="33" class="square" onclick="JogoDaVelha('3','3')"></td>
+      	</tr>
+	    </tbody>
+    </table>
+  </center>
 	<div id="message"></div>
 	<button type="button" onclick="Reset()">Reset</button>
 </div>
