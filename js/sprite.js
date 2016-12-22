@@ -51,10 +51,10 @@ function Sprite(img) {
 	
 	//Animate the figure
 	this.animation = function() {
-		if(this.mvLeft || this.mvUp || this.mvRight || this.mvDown) {
+		if (this.mvLeft || this.mvUp || this.mvRight || this.mvDown) {
 			//Case an arrow is pressed, the animation counter will be incremented
 			this.countAnim++;
-			if(this.countAnim >= 40) {
+			if (this.countAnim >= 40) {
 				this.countAnim = 0;
 			}
 			this.srcX = Math.floor(this.countAnim / 10) * this.width;

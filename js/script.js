@@ -7,8 +7,8 @@ window.onload = function() {
 	var spriteSheet = new Image();
 	spriteSheet.src = "img/darthvader.png";
 	var vader = new Sprite(spriteSheet);
-	window.addEventListener("keydown",keydownHandler,false);
-	window.addEventListener("keyup",keyupHandler,false);
+	window.addEventListener("keydown", keydownHandler, false);
+	window.addEventListener("keyup", keyupHandler, false);
 	
 	function keydownHandler(e) {
 		switch(e.keyCode) {
@@ -58,7 +58,11 @@ window.onload = function() {
 				break;
 		}
 	}
-	
+
+	cnv.ondblclick = function() {
+		init();
+	}
+
 	//When the image is loaded, the animation starts
 	//(not in this case but I will leave this here)
 	spriteSheet.onload = function() {
@@ -76,12 +80,12 @@ window.onload = function() {
 	}
 
 	function draw() {
-		ctx.clearRect(0,0,cnv.width,cnv.height);
+		ctx.clearRect(0,0, cnv.width, cnv.height);
 		vader.draw(ctx);
 	}
 
 	function loop() {
-		window,requestAnimationFrame(loop,cnv);
+		window,requestAnimationFrame(loop, cnv);
 		update();
 		draw();
 	}
