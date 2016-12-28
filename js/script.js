@@ -77,6 +77,9 @@ window.onload = function() {
 
 	function update() {
 		vader.move();
+		//Character will move only inside canvas
+		vader.posX = Math.max(0, Math.min(cnv.width - vader.width, vader.posX));
+		vader.posY = Math.max(0, Math.min(cnv.height - vader.height, vader.posY));
 	}
 
 	function draw() {

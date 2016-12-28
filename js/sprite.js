@@ -7,7 +7,7 @@ function Sprite(img) {
 	this.posX = this.posY = 0;
 	this.width = 32;
 	this.height = 48;
-	this.speed = 0; //not moving
+	this.speed = 1; //not moving
 	this.img = img;
 	this.countAnim = 0;
 
