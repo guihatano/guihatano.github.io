@@ -227,6 +227,16 @@ float: right;
         left: -14px;
         right: auto;
     }
+
+    .timeline li:nth-child(odd) div {
+      transform: translate3d(-200px, 0, 0);
+    }
+
+    .timeline li.in-view div {
+      transform: none;
+      visibility: visible;
+      opacity: 1;
+    }
 }
 
 .timeline-body > .media-body > h4 {
