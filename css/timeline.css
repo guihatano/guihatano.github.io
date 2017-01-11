@@ -188,23 +188,30 @@ float: right;
 
 @media (max-width: 767px) {
     ul.timeline:before {
-        left: 40px;
+        left: 30px;
     }
 
     ul.timeline > li > .timeline-panel {
-        width: calc(100% - 90px);
-        width: -moz-calc(100% - 90px);
-        width: -webkit-calc(100% - 90px);
+        width: calc(100% - 70px);
+        width: -moz-calc(100% - 70px);
+        width: -webkit-calc(100% - 70px);
     }
 
     ul.timeline > li > .timeline-badge {
-        left: 15px;
+        left: 10px;
         margin-left: 0;
-        top: 16px;
     }
 
     ul.timeline > li > .timeline-panel {
         float: right;
+    }
+
+    ul.timeline > li > .timeline-panel > .timeline-body > .ela-img {
+        display: none;
+    }
+
+    ul.timeline > li > .timeline-panel > .timeline-body > .blog-link {
+        word-wrap: break-word;
     }
 
     ul.timeline > li > .timeline-panel:before {
