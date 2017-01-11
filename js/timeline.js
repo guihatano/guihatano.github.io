@@ -30,4 +30,13 @@ window.onload = function() {
   window.addEventListener("resize", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
 
+  $('.see-more').click(function(){
+    var $this = $(this);
+    $this.toggleClass('see-more');
+    if($this.hasClass('see-more')){
+      $this.text('See More');
+    } else {
+      $this.text('See Less');
+    }
+  });
 }
