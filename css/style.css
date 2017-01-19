@@ -52,10 +52,6 @@ h1, h2 {
 	text-align: center;
 }
 
-/*td {
-	padding: 20px;
-}*/
-
 .square {
     width:100px;
     height:100px;
@@ -74,4 +70,10 @@ h1, h2 {
 #message {
 	color:#E6E6E6;
 	padding-top: 15px;
+}
+
+@media (max-width: 600px) {
+	.tituloJogo {
+		font-size: 7.5vw;
+	}
 }
