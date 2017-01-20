@@ -19,11 +19,11 @@ h1, h2 {
 	color:#333;
 }
 
-.titulo {
+.title {
 	margin-top: 30px;
 	margin-bottom: 20px;
 }
-.tituloJogo {
+.gameTitle {
 	margin-bottom: 20px;
 }
 
@@ -73,7 +73,7 @@ h1, h2 {
 }
 
 @media (max-width: 600px) {
-	.tituloJogo {
+	.gameTitle {
 		font-size: 7.5vw;
 	}
 }
