@@ -27,11 +27,15 @@ h1, h2 {
 	margin-bottom: 20px;
 }
 
+.twikedin {
+	display: inline;
+}
+
 #content {
 	text-align:center;
 }
 
-#content>a, #content>p>a {
+#content>a, #content>p>a, #content>.twikedin>a {
 	color: #AEAEAE;
 }
 
@@ -75,5 +79,9 @@ h1, h2 {
 @media (max-width: 600px) {
 	.gameTitle {
 		font-size: 7.5vw;
+	}
+
+	.twikedin {
+		display: block;
 	}
 }
