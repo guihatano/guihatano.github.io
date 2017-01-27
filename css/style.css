@@ -7,6 +7,14 @@ h1, h2 {
 	color:#E6E6E6;
 }
 
+a {
+	color: #AEAEAE;
+}
+
+a:hover, a:focus {
+	color: #E6E6E6;
+}
+
 .dropdown-menu {
 	background-color:#222;
 }
@@ -33,14 +41,6 @@ h1, h2 {
 
 #content {
 	text-align:center;
-}
-
-#content>a, #content>p>a, #content>.twikedin>a {
-	color: #AEAEAE;
-}
-
-#content>a:hover, #content>p>a:hover {
-	color: #E6E6E6;
 }
 
 #content>p {
