@@ -250,13 +250,10 @@ float: right;
 .btn-link {
     padding-left: 0;
     border-left: 0;
-}
-
-.see-more {
     color: #E6E6E6;
 }
 
-.see-more:hover {
+.btn-link:hover, .btn-link:focus {
     color: #AEAEAE;
 }
 
