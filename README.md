@@ -3,15 +3,16 @@
 
 For now is just a site with a Tic Tac Toe made from scratch, my timeline and an about page.
 
-The about page tells about how to find me on the internet not about the site, sorry!
+The about page shows about how to find me on the internet not about the site, sorry!
 
+Always thinking about the responsiveness!
 
 ### Tech
 
 * [Twitter Bootstrap] 3.3.7
 * [Font Awesome] 4.7.0
 * [jQuery]
-
+* [W3Data]
 
 Sprite from [Sithjester][sithjester1]
 
@@ -25,4 +26,5 @@ License
 [Twitter Bootstrap]: <http://getbootstrap.com/>
 [Font Awesome]: <http://fontawesome.io/>
 [jQuery]: <http://jquery.com>
+[W3Data]: <http://www.w3schools.com/w3css/w3data_home.asp>
 [sithjester1]: <http://untamed.wild-refuge.net/rpgxp.php>
