@@ -5,96 +5,345 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link rel="shortcut icon" href="gyh.ico" type="image/x-icon">
 	<link rel="icon" href="gyh.ico" type="image/x-icon">
-	<script src="js/theScripts.js"></script>
-  <script src="https://use.fontawesome.com/28fb403ee1.js"></script>
+	<script src="https://use.fontawesome.com/28fb403ee1.js"></script>
   <script src="js/w3data.js"></script>
 	<!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 
+	<link rel="stylesheet" type="text/css" href="icons/flisol-icon.css">
+	<link rel="stylesheet" type="text/css" href="css/timeline.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/timeline.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-<div id="menu">
-	<nav class="navbar navbar-inverse" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="http://guihatano.github.io/#">guihatano</a>
+	<div id="menu">
+		<nav class="navbar navbar-inverse" role="navigation">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="http://guihatano.github.io/#">guihatano</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="menu-collapse">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="index.html">Home</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jogo da Velha <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="tictactoe.html">1 Player</a></li>
+	            <li><a href="tictactoe2p.html">2 Players</a></li>
+	          </ul>
+	        </li>
+          <li><a href="timeline.html">CV Timeline</a></li>
+          <li><a href="about.html">About</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="http://guihatano.blogspot.com.br/">blog</a></li>
+	        <li class="disabled dropdown">
+	          <a href="http://guihatano.github.io/#" class="dropdown-toggle" data-toggle="dropdown">Site style <b class="caret"></b></a>
+	          <ul class="dropdown-menu">
+	            <li class="disabled"><a href="http://guihatano.github.io/#">Version 1</a></li>
+	            <li><a href="#">Version 2</a></li>
+	            <li><a href="#">Version 3</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	</div>
+
+	<div class="container">
+    <div class="page-header">
+        <h1 id="title">Guilherme Yuki Hatano's Timeline</h1>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="menu-collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jogo da Velha <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="tictactoe.html">1 Player</a></li>
-            <li><a href="tictactoe2p.html">2 Players</a></li>
-          </ul>
+    <ul class="timeline">
+        <li class="in-view">
+          <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Education</h4>
+              <p><small class="text-muted">2011 → 2013 (3 years)</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - IFSP (Federal Institute of Education, Science and Technology of São Paulo)</p>
+              <p>System Analysis and Development</p>
+            </div>
+          </div>
         </li>
-        <li><a href="timeline.html">CV Timeline</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://guihatano.blogspot.com.br/">blog</a></li>
-        <li class="disabled dropdown">
-          <a href="http://guihatano.github.io/#" class="dropdown-toggle" data-toggle="dropdown">Site style <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li class="disabled"><a href="http://guihatano.github.io/#">Version 1</a></li>
-            <li><a href="#">Version 2</a></li>
-            <li><a href="#">Version 3</a></li>
-          </ul>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="fa fa-graduation-cap"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Tutoring</h4>
+              <p><small class="text-muted">Mar 2012 → Jul 2012</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>C Programming Language Tutor at IFSP</p>
+            </div>
+          </div>
         </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-  </nav>
+        <li class="timeline-panel">
+          <div class="timeline-badge"><i class="fa fa-graduation-cap"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Undergraduate Research</h4>
+              <p><small class="text-muted">Aug 2012 → Jan 2013</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Investigation of the performance and functionality of Business
+				Intelligence Platforms with PostgreSQL/PostGIS, Pentaho Mondrian e Spatialytics
+				GeoMondrian (2012).</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"><i class="fa fa-flisol"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Volunteer</h4>
+              <p><small class="text-muted">Feb 2013 → Oct 2015 (2 years 9 months)</small></p>
+            </div>
+            <div class="timeline-body">
+              <p><b>Collaborator</b></p>
+              <p>FLISOL São Carlos</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge warning"><i class="fa fa-newspaper-o"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Publication as second author</h4>
+              <p><small class="text-muted">October 8, 2013</small></p>
+            </div>
+            <div class="timeline-body">
+            	<h4><a href="http://ieeexplore.ieee.org/document/6670652/" target="_blank">On the performance and use of spatial OLAP tools <i class="fa fa-external-link"></i></a></h4>
+            	<p><b>Published in:</b> Computing Conference (CLEI), 2013 XXXIX Latin American</p>
+            	<p id="desc" class="collapse"><b>Description:</b> Spatial data warehouses provide a means of carrying out spatial analysis together with agile and flexible multidimensional analytical queries performed by SOLAP tools. However, queries are processed with slow query response times and functionalities of these tools are still insufficient, such as the support for a variety of spatial data warehouse schemas. In this paper, we conduct an experimental evaluation of existing open source software as SOLAP tool and database management system, to analyze its functionalities and query processing performance. Furthermore, we describe and evaluate our novel SOLAP tool called MapQuery that reuses efficient indices to boost query processing performance. Results derived from our performance evaluation indicated that MapQuery shortened the response time of queries from at least 63% up to 92% if compared to existing solutions.</p>
+              <button class="btn btn-link see-more" data-toggle="collapse" data-target="#desc">See More</button>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"><i class="fa fa-comments"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">My blog</h4>
+              <p><small class="text-muted">February 2014</small></p>
+            </div>
+            <div class="timeline-body">
+              <a href="http://guihatano.blogspot.com.br/" class="blog-link" target="_blank">http://guihatano.blogspot.com.br/</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge danger"><i class="fa fa-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Internship at <a href="http://www.bluedotsoft.com/" target="_blank">bluedotsoft <i class="fa fa-external-link"></i></a></h4>
+              <p><small class="text-muted">Aug 2013 → Feb 2014 (7 months)</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Developer with Java EE 6, Glassfish, MySQL and Git.</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge success"><i class="fa fa-laptop"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Volunteer</h4>
+              <p><small class="text-muted">February 2015</small></p>
+            </div>
+            <div class="timeline-body">
+              <p><b>Campus Party 2015</b></p>
+              <p>Temporary CRM Collaborator</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge info"><i class="fa fa-github"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Open source project</h4>
+              <p><small class="text-muted">May 2015</small></p>
+            </div>
+            <div class="timeline-body">
+              <div class="media-left">
+              	<i class="fa fa-flisol fa-3x"></i>
+              </div>
+              <div class="media-body">
+          		<b><a href="https://github.com/guihatano/flisol-icon" target="_blank">flisol-icon <i class="fa fa-external-link"></i></a></b>
+	            <p>a font icon</p>
+              </div>
+              <div class="media-right">
+              	<i class="fa fa-flisol-old fa-3x"></i>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge info"><i class="fa fa-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">System Analyst and Developer at <a href="http://www.bluedotsoft.com/" target="_blank">bluedotsoft <i class="fa fa-external-link"></i></a></h4>
+              <p><small class="text-muted">Jul 2014 → Oct 2015 (1 year, 4 months)</small></p>
+            </div>
+            <div class="timeline-body">
+              <p>Developer with Java EE 7, Wildfly 8.2, JSF 2.2, JMS, Primefaces, Hibernate, MySQL and Git.</p>
+              <p id="desc2" class="collapse">DevOps setup of Redmine, Gitolite, Jenkins, Sonar Qube, Sonatype Nexus, ELK (Elasticsearch, Logstash and Kibana) and OpenNMS.<br>
+              System Administration:<br>
+			         - NFS (Network File System).<br>
+			         - Firewall with Iptables.</br>
+			        Security tools used: SQLMap, Hydra, OWASP ZAP.</p>
+              <button class="btn btn-link see-more" data-toggle="collapse" data-target="#desc2">See More</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Education</h4>
+              <p><small class="text-muted">Dec 2015 → Jul 2016 (8 months)</small></p>
+            </div>
+            <div class="timeline-body">
+            	<div class="media-left logo-img"><img src="https://i.stack.imgur.com/5WHIo.png" class="media-object" alt="ELA logo" width="100px"></div>
+              <div class="media-body">
+              		<h4 class="media-heading">English Language Academy (ELA Ireland)</h4>
+              		<p>General English, Upper Intermediate</p>
+            	</div>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="fa fa-users"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Volunteer</h4>
+              <p><small class="text-muted">12th December 2015</small></p>
+            </div>
+            <div class="timeline-body">
+              <p><b>Aware Christmas Run</b></p>
+              <p>Phoenix Park, Dublin, Ireland</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title"><a href="http://www.herald.ie/" target="_blank">The Herald's</a> Newspaper Seller</h4>
+              <p><small class="text-muted">11th January 2016 → 5th February 2016</small></p>
+            </div>
+            <div class="timeline-body">
+              <div class="media-left logo-img"><img src="https://scontent.fqsc1-1.fna.fbcdn.net/v/t1.0-1/p200x200/16640964_1419670814712590_6745889107799658918_n.jpg?oh=3dc235b5535cd34311bd1f6addde84d3&oe=59B8BE5D" class="media-object" alt="the herald logo" width="100px"></div>
+              <div class="media-body">
+                <p>The Herald's Newspaper Seller</p>
+                <p>Dublin, Ireland</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="fa fa-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Cleaner at <a href="http://www.ailesbury.com/" target="_blank">Ailesbury Services <i class="fa fa-external-link"></i></a></h4>
+              <p><small class="text-muted">13th February 2016 → 9th April 2016</small></p>
+            </div>
+            <div class="timeline-body">
+              <div class="media-left logo-img"><img src="http://www.ailesbury.com/img/ailesbury-logo.gif" class="media-object" alt="ailesbury-logo" width="100px"></div>
+              <div class="media-body">
+                <p>Cleaner at Massimo Dutti Store in Dundrum Town Centre </p>
+                <p>Dublin, Ireland</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"><i class="fa fa-users"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Volunteer</h4>
+              <p><small class="text-muted">26th March 2016</small></p>
+            </div>
+            <div class="timeline-body">
+              <p><b>Cadbury Easter Egg Hunt</b></p>
+              <p>Merrion Square, Dublin, Ireland</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="fa fa-users"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Volunteer</h4>
+              <p><small class="text-muted">18th June 2016</small></p>
+            </div>
+            <div class="timeline-body">
+              <div class="media-left logo-img"><img src="http://coolestprojects.org/wp-content/uploads/2015/01/Coolest-Project-Logo-Final3x.png" class="media-object" alt="coolest project logo" width="100px"></div>
+              <div class="media-body">
+                <p><b>CoderDojo Coolest Projects Awards</b></p>
+                <p>RDS Dublin, Ireland</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-badge"><i class="fa fa-github"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Open source project</h4>
+              <p><small class="text-muted">6th November 2016</small></p>
+            </div>
+            <div class="timeline-body">
+              <div class="media-left">
+                <i class="fa fa-github fa-3x"></i>
+              </div>
+              <div class="media-body">
+                <b><a href="https://github.com/guihatano/guihatano.github.io" target="_blank">guihatano.github.io <i class="fa fa-external-link"></i></a></b>
+                <p>This site's code</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="fa fa-github"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Open source project</h4>
+              <p><small class="text-muted">Started: 5th June 2017</small></p>
+            </div>
+            <div class="timeline-body">
+              <div class="media-left">
+                <i class="fa fa-github fa-3x"></i>
+              </div>
+              <div class="media-body">
+                <b><a href="https://github.com/guihatano/imobiliaria" target="_blank">github.com/guihatano/imobiliaria <i class="fa fa-external-link"></i></a></b>
+                <p>A real estate agency's website using Ruby on Rails / Site para imobiliária em Ruby on Rails</p>
+              </div>
+            </div>
+          </div>
+        </li>
+    </ul>
 </div>
-
-<div id="content">
-	<h1 class="gameTitle">Jogo da Velha (Tic Tac Toe)</h1>
-	<center>
-    <table id="tab">
-	    <tbody>
-        <tr>
-      		<td id="11" class="square" onclick="JogoDaVelha('1','1')"></td>
-      		<td id="12" class="square v" onclick="JogoDaVelha('1','2')"></td>
-      		<td id="13" class="square" onclick="JogoDaVelha('1','3')"></td>
-	      </tr>
-	      <tr>
-      		<td id="21" class="square h" onclick="JogoDaVelha('2','1')"></td>
-      		<td id="22" class="square h v" onclick="JogoDaVelha('2','2')"></td>
-      		<td id="23" class="square h" onclick="JogoDaVelha('2','3')"></td>
-      	</tr>
-      	<tr>
-      		<td id="31" class="square" onclick="JogoDaVelha('3','1')"></td>
-      		<td id="32" class="square v" onclick="JogoDaVelha('3','2')"></td>
-      		<td id="33" class="square" onclick="JogoDaVelha('3','3')"></td>
-      	</tr>
-	    </tbody>
-    </table>
-  </center>
-	<div id="message"></div>
-	<button class="btn" type="button" onclick="Reset()">Reset</button>
-</div>
-
 
 <div w3-include-html="footer.html"></div>
 <script>
-w3IncludeHTML();
+  w3IncludeHTML();
 </script>
-
-
 </body>
 </html>
