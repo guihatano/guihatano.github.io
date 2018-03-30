@@ -211,7 +211,9 @@ float: right;
     }
 
     ul.timeline > li > .timeline-panel > .timeline-body > .logo-img {
-        display: none;
+        /*display: none;*/
+        display: block;
+        margin-bottom: 5px;
     }
 
     ul.timeline > li > .timeline-panel > .timeline-body > .blog-link {
