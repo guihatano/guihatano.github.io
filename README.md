@@ -1,7 +1,7 @@
 # guihatano.github.io
 
 
-For now is just a site with a Tic Tac Toe made from scratch, my timeline and an about page.
+For now is just a site with my professional timeline, a Tic Tac Toe made from scratch and an about page.
 
 The about page shows about how to find me on the internet not about the site, sorry!
 
