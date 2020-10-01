@@ -16,6 +16,8 @@ Always thinking about the responsiveness!
 
 Sprite from [Sithjester][sithjester1]
 
+### Tic Tac Toe
+The code written is old, my development skills have benn improved since it, so keep it in mind
 
 License
 ----
