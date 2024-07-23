@@ -9,9 +9,9 @@ Always thinking about the responsiveness!
 
 ### Tech
 
-* [Twitter Bootstrap] 3.3.7
+* [Bootstrap] 3.4.1
 * [Font Awesome] 4.7.0
-* [jQuery]
+* [jQuery] 3.7.1
 * [W3Data]
 
 Sprite from [Sithjester][sithjester1]
