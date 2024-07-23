@@ -25,7 +25,7 @@ License
 [MIT](https://github.com/guihatano/guihatano.github.io/blob/master/LICENSE)
 
 
-[Twitter Bootstrap]: <http://getbootstrap.com/>
+[Bootstrap]: <http://getbootstrap.com/>
 [Font Awesome]: <http://fontawesome.io/>
 [jQuery]: <http://jquery.com>
 [W3Data]: <http://www.w3schools.com/w3css/w3data_home.asp>
