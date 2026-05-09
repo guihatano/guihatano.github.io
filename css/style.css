@@ -1,169 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
-body {
-	background-color:#191919;
+/* ── Design tokens ── */
+:root {
+    --bg:             #0c0c0f;
+    --surface:        #13131a;
+    --border:         rgba(255, 255, 255, 0.07);
+    --border-hover:   rgba(129, 140, 248, 0.38);
+    --text-primary:   #ededf0;
+    --text-secondary: #9191a8;
+    --text-muted:     #52526b;
+    --accent:         #818cf8;
+    --accent-2:       #a78bfa;
+    --accent-glow:    rgba(129, 140, 248, 0.12);
+    --radius:         10px;
+    --font:           'Inter', system-ui, -apple-system, sans-serif;
 }
 
-h1, h2 {
-	color:#E6E6E6;
+/* ── Base ── */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 17px;
+}
+
+body {
+    background-color: var(--bg);
+    font-family: var(--font);
+    font-size: 1rem;
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+    font-family: var(--font);
 }
 
 a {
-	color: #AEAEAE;
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 a:hover, a:focus {
-	color: #E6E6E6;
+    color: var(--accent-2);
+    text-decoration: none;
+}
+
+/* ── Navbar ── */
+.navbar-inverse {
+    background-color: rgba(12, 12, 15, 0.92);
+    border: none;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    transition: color 0.2s ease;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: var(--text-primary);
+    background: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: var(--accent);
+    background: transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: var(--border);
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: var(--text-secondary);
+}
+
+.navbar-inverse .navbar-collapse {
+    border-color: var(--border);
 }
 
 .dropdown-menu {
-	background-color:#222;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    padding: 4px;
 }
 
-.dropdown-menu>li>a {
-	color:#FFF;
+.dropdown-menu > li > a {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    border-radius: 6px;
+    padding: 7px 12px;
+    transition: color 0.15s ease, background 0.15s ease;
 }
 
-.dropdown-menu>.disabled>a,.dropdown-menu>.disabled>a:hover, .dropdown-menu>.disabled>a:focus {
-	color:#333;
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.06);
 }
 
-.title {
-	margin-top: 30px;
-	margin-bottom: 20px;
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+    color: var(--text-muted);
 }
-.gameTitle {
-	margin-bottom: 20px;
+
+/* ── Page header ── */
+.page-header {
+    margin: 32px 0 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+.page-header h1 {
+    font-size: 1.625rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+}
+
+/* ── About page ── */
+#content {
+    text-align: center;
+    padding-top: 48px;
+}
+
+#content > p {
+    margin-top: 12px;
+    color: var(--text-secondary);
+}
+
+#content a {
+    display: inline-block;
+    margin: 6px;
+}
+
+#content .fa {
+    color: var(--text-muted);
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+#content .fa:hover {
+    color: var(--accent);
+    transform: translateY(-3px) scale(1.08);
 }
 
 .twikedin {
-	display: inline;
+    display: inline;
 }
 
-#content {
-	text-align:center;
+/* ── Buttons ── */
+.btn {
+    background-color: transparent;
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
 }
 
-#content>p {
-	margin-top:10px;
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active {
+    background-color: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.18);
+    color: var(--text-primary);
+    outline: none;
+}
+
+/* ── Tic Tac Toe ── */
+.title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.gameTitle {
+    margin-bottom: 20px;
 }
 
 #tab {
-	font-size:50px;
-	color:#E6E6E6;
+    font-size: 50px;
+    color: var(--text-primary);
 }
 
-#tab>tbody>tr>td {
-	text-align: center;
+#tab > tbody > tr > td {
+    text-align: center;
 }
 
 .square {
-    width:100px;
-    height:100px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
 }
 
 .v {
-    border-left: 5px solid #E6E6E6;
-    border-right: 5px solid #E6E6E6;
+    border-left: 5px solid rgba(255, 255, 255, 0.22);
+    border-right: 5px solid rgba(255, 255, 255, 0.22);
 }
 
 .h {
-    border-top: 5px solid #E6E6E6;
-    border-bottom: 5px solid #E6E6E6;
+    border-top: 5px solid rgba(255, 255, 255, 0.22);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.22);
 }
 
 #message {
-	color:#E6E6E6;
-	padding-top: 15px;
+    color: var(--text-primary);
+    padding-top: 15px;
 }
 
-@media (max-width: 600px) {
-	.gameTitle {
-		font-size: 7.5vw;
-	}
-
-	.twikedin {
-		display: block;
-	}
-}
-
-
-/* FOOTER
---------------------------------------------------*/
-
+/* ── Footer ── */
 footer {
-	background-color: black;
-	margin-top: 60px;
-	width: 100%;
-	bottom: 0px;
+    background-color: var(--surface);
+    border-top: 1px solid var(--border);
+    margin-top: 80px;
+    width: 100%;
 }
 
 footer h4 {
-	color: #AEAEAE;
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
 }
 
 footer .container {
-	padding: 10px, 0px;
-	/*text-align: center;*/
-	width: 100%;
-}
-
-footer .container .footer-follow {
-	text-align: center;
-}
-
-footer .container p {
-	margin-top: 10px;
-}
-
-footer .copyright {
-	padding-top: 10px;
-	padding-bottom: 20px;
-}
-
-footer .copyright p {
-	text-align: center;
-	margin: 0;
-}
-
-footer .container ul {
-	list-style: none;
-}
-
-.footer-menu {
-	padding-top: 20px;
-}
-
-.footer-menu li {
-	padding-top: 5px;
-	padding-left: 40%
+    padding: 32px 15px;
+    width: 100%;
 }
 
 .footer-follow {
-	padding-top: 20px;
-}
-
-.footer-menu ul,
-.footer-follow ul {
-	padding-left: 0px;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .footer-follow ul {
-	padding-top: 15px;
+    list-style: none;
+    padding: 12px 0 0;
 }
 
 .footer-follow > ul > li {
-	display: inline-block;
-	padding-right: 5px;
-	padding-left: 5px;
+    display: inline-block;
+    padding: 0 10px;
 }
 
+.footer-follow a {
+    color: var(--text-muted);
+    display: inline-block;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-follow a:hover {
+    color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.footer-menu {
+    padding-top: 20px;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu li {
+    padding-top: 6px;
+    padding-left: 40%;
+}
+
+.footer-menu a {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+}
+
+.footer-menu a:hover {
+    color: var(--text-secondary);
+}
+
+.copyright {
+    padding: 16px 0 24px;
+    border-top: 1px solid var(--border);
+}
+
+.copyright p {
+    text-align: center;
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.775rem;
+}
+
+/* ── Responsive ── */
 @media (max-width: 991px) {
-	.footer-menu {
-		text-align: center;
-	}
+    .footer-menu {
+        text-align: center;
+    }
+    .footer-menu li {
+        padding-left: 0;
+    }
+}
 
-	.footer-menu li {
-		padding-left: 0;
-	}
-
+@media (max-width: 600px) {
+    .twikedin {
+        display: block;
+    }
+    .gameTitle {
+        font-size: 7.5vw;
+    }
 }
