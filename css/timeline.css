@@ -295,3 +295,12 @@
 .page-header {
     margin: 0 0 20px;
 }
+
+/* ── Light theme overrides ── */
+[data-theme="light"] .timeline > li > .timeline-panel:hover {
+    box-shadow: 0 0 0 1px var(--border-hover), 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .timeline > li:hover > .timeline-badge {
+    box-shadow: 0 0 0 7px rgba(91, 91, 214, 0.15), 0 0 18px rgba(91, 91, 214, 0.2);
+}
