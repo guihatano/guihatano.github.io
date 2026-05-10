@@ -367,6 +367,138 @@ footer .container {
     color: var(--text-primary);
 }
 
+/* ── Coral theme (Version 3) ── */
+[data-theme="coral"] {
+    --bg:             #f7f7f7;
+    --surface:        #ffffff;
+    --border:         rgba(0, 0, 0, 0.07);
+    --border-hover:   rgba(224, 108, 117, 0.35);
+    --text-primary:   #2d2d2d;
+    --text-secondary: #777777;
+    --text-muted:     #aaaaaa;
+    --accent:         #e06c75;
+    --accent-2:       #c85560;
+    --accent-glow:    rgba(224, 108, 117, 0.12);
+}
+
+[data-theme="coral"] .navbar-inverse {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ebebeb;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="coral"] .navbar-brand img {
+    filter: invert(1);
+}
+
+[data-theme="coral"] .navbar-inverse .navbar-nav > li > a {
+    color: #666;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+[data-theme="coral"] .navbar-inverse .navbar-nav > .active > a,
+[data-theme="coral"] .navbar-inverse .navbar-nav > .active > a:hover {
+    color: var(--accent);
+}
+
+[data-theme="coral"] .navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #666;
+}
+
+[data-theme="coral"] .navbar-inverse .navbar-collapse {
+    background-color: #fff;
+    border-top-color: #ebebeb;
+}
+
+[data-theme="coral"] .page-header {
+    text-align: center;
+    border-bottom: none;
+}
+
+[data-theme="coral"] .page-header::after {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+    margin: 10px auto 0;
+}
+
+[data-theme="coral"] .btn {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    border-radius: 20px;
+    padding: 6px 20px;
+}
+
+[data-theme="coral"] .btn:hover,
+[data-theme="coral"] .btn:focus,
+[data-theme="coral"] .btn:active {
+    background-color: var(--accent-2);
+    border-color: var(--accent-2);
+    color: #fff;
+}
+
+[data-theme="coral"] .v {
+    border-left-color: rgba(0, 0, 0, 0.12);
+    border-right-color: rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="coral"] .h {
+    border-top-color: rgba(0, 0, 0, 0.12);
+    border-bottom-color: rgba(0, 0, 0, 0.12);
+}
+
+/* Dropdown-toggle aberto nos temas claros — Bootstrap usa #080808 por padrão */
+[data-theme="light"] .navbar-inverse .navbar-nav > .open > a,
+[data-theme="light"] .navbar-inverse .navbar-nav > .open > a:hover,
+[data-theme="light"] .navbar-inverse .navbar-nav > .open > a:focus,
+[data-theme="coral"] .navbar-inverse .navbar-nav > .open > a,
+[data-theme="coral"] .navbar-inverse .navbar-nav > .open > a:hover,
+[data-theme="coral"] .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #5b5b5b;
+    color: #fff;
+}
+
+/* Loldesign: troca logo branco pelo colorido nos temas claros */
+.logo-light-only { display: none; }
+
+[data-theme="light"] .logo-dark-only,
+[data-theme="coral"] .logo-dark-only { display: none; }
+
+[data-theme="light"] .logo-light-only,
+[data-theme="coral"] .logo-light-only { display: inline; }
+
+/* Logos brancos ficam invisíveis em temas claros — adiciona fundo escuro */
+[data-theme="light"] img[src*="-white"],
+[data-theme="coral"] img[src*="-white"] {
+    background-color: #2d2d2d;
+    border-radius: 6px;
+    padding: 7px;
+}
+
+/* Dropdown item ativo nos temas claros */
+[data-theme="light"] .dropdown-menu > .active > a,
+[data-theme="light"] .dropdown-menu > .active > a:hover,
+[data-theme="light"] .dropdown-menu > .active > a:focus,
+[data-theme="coral"] .dropdown-menu > .active > a,
+[data-theme="coral"] .dropdown-menu > .active > a,
+[data-theme="coral"] .dropdown-menu > .active > a:hover,
+[data-theme="coral"] .dropdown-menu > .active > a:focus {
+    background-color: var(--accent);
+}
+[data-theme="coral"] .dropdown-menu > .active > a,
+[data-theme="coral"] .dropdown-menu > .active > a:hover,
+[data-theme="coral"] .dropdown-menu > .active > a:focus {
+    color: #5b5b5b;
+    background-color: var(--accent);
+}
+
 /* ── Responsive ── */
 @media (max-width: 991px) {
     .footer-menu {
