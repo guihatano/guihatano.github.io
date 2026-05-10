@@ -290,6 +290,20 @@
     .timeline li:nth-child(even) > .timeline-panel {
         transform: translateX(-24px);
     }
+
+    /* stack logo above description on narrow panels */
+    .timeline-body .media-left,
+    .timeline-body .media-right {
+        display: block;
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 8px;
+    }
+
+    .timeline-body .media-body {
+        display: block;
+        width: auto;
+    }
 }
 
 .page-header {
